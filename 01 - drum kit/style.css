@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.keys {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.key {
+  text-align: center;
+  transition: all 0.25s ease-in-out;
+  margin: 5px;
+  padding: 0.5rem;
+  border: 5px solid black;
+}
+
+kbd {
+  font-size: 2rem;
+}
+
+.sound {
+  display: block;
+}
+
+.playing {
+  border: 5px solid cornflowerblue;
+  box-shadow: 0 0 15px cornflowerblue;
+  transform: scale(1.1);
+}
