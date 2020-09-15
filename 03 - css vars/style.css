@@ -1,0 +1,46 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image {
+  width: 20%;
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
+
+.controls {
+  display: block;
+  margin: 2rem;
+}
